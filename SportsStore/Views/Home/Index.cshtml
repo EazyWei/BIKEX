@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/theme.css"/>
+</head>
+<body>
+    <div>
+
+        <div class="align-items-center">
+            <h1>BikeX<span style="font-style:italic; font-family:monospace; font-size:22px; color:white;"> Discover your dream ride.</span></h1>
+        </div>
+
+        <h2 style=" color: #00874c">New Releases</h2>
+        <!-- ELEMENT 1 New Releases Deck Using Bootstrap Card-Deck -->
+
+        <div class="card-deck">
+
+            <div class="card bg-light">
+                <img class="card-img-top" src="~/images/size1/bike2.png"/>
+                <div class="card-body">
+                    <h5 class="card-title align-text-bottom">Rehman Super Bike X</h5>
+                    <h6 class="card- align-text-bottom">A really fast bike with top speed 75 mph</h6>
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <img class="card-img-top" src="~/images/size1/scooter1.png" />
+                <div class="card-body">
+                    <h5 class="card-title align-text-bottom">Rehman ScootrZ</h5>
+                    <h6 class="card- align-text-bottom">Awesome scooter with 20 hours of battery life</h6>
+                </div>
+            </div>
+
+            <div class="card bg-light align-text-bottom">
+                <img class="card-img-top" src="~/images/size1/hoverboard1.png" />
+                <div class="card-body">
+                    <h5 class="card-title align-text-bottom">Techsoles BalancerBoard</h5>
+                    <h6 class="card- align-text-bottom">Cool hoverboard with self balancing feature</h6>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <h2 style="margin-top:50px">Shop</h2>
+
+    <!-- ELEMENT 2 Bike MAIN DISPLAY -->
+    <div class="card bg-light text-dark rounded mx-auto">
+
+        <img src="~/images/bikethumb.jpg" class="img-fluid" style="max-height:800px" />
+        <div style="background-color:black;" class="text-lg-center">
+            <a class="card-link font-weight-bold" style="font-family: 'Segoe UI'; font-size: 42px; color: white;"
+               asp-action="List"
+                    asp-controller="Product"
+                    asp-route-category="Bikes"
+                    asp-route-page="1">Shop Bikes</a>
+        </div>
+
+    </div>
+
+
+    <!-- ELEMENT 3 Scooter AND Hoverboard DISPLAY -->
+    <div class="card-deck" style="margin-top:50px;">
+
+        <div class="card bg-light text-dark rounded mx-auto" style="margin-right:10px">
+
+            <img src="~/images/scooterthumb.jpg" class="img-fluid" style="max-height:400px; height:500px" />
+            
+            <div style="background-color:black;" class="text-lg-center">
+                <a class="card-link font-weight-bold" style="font-family: 'Segoe UI'; font-size: 42px; color: white;"
+                    asp-action="List"
+                    asp-controller="Product"
+                    asp-route-category="Scooters"
+                    asp-route-page="1">Shop Scooters</a>
+            </div>
+
+        </div>
+
+        <div class="card bg-light text-dark rounded mx-auto">
+
+            <img src="~/images/hoverboardthumb.jpg" class="img-fluid" style="max-height:400px; height:500px" />
+       
+            <div style="background-color:black;" class="text-lg-center">
+                <a class="card-link font-weight-bold" style="font-family: 'Segoe UI'; font-size: 42px; color: white;"
+                    asp-action="List"
+                    asp-controller="Product"
+                    asp-route-category="Hoverboards"
+                    asp-route-page="1">Shop Hoverboards</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
