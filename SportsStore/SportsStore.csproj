@@ -7,7 +7,6 @@
 	<ItemGroup>
 		<Folder Include="Data\" />
 		<Folder Include="Pages\" />
-		<Folder Include="wwwroot\images\" />
 		<Folder Include="wwwroot\js\" />
 		<Folder Include="wwwroot\lib\bootstrap\" />
 		<Folder Include="wwwroot\lib\bootstrap\dist\css\" />
